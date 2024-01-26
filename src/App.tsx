@@ -4,7 +4,7 @@ import Blogs from "./components/sections/blogs/Blogs";
 
 const App = () => {
   return (
-    <div className="App animate-slowfade2 flex flex-col gap-y-6">
+    <div className="App animate-slowfade2 flex flex-col gap-y-12">
       <Navbar />
       <Header />
       <Blogs />

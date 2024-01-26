@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import NavItem from '../../inc/NavbItem';
 import BlogCard from '../../inc/BlogCard';
-import laptopImg from "../../../assets/img/laptopBg.svg";
+import SocialBlock from '../../inc/SocialBlock';
 
 const Blogs: React.FC = () => {
     const [selectedNav, setSelectedNav] = useState('All Blogs');
@@ -18,10 +18,10 @@ const Blogs: React.FC = () => {
     };
 
     return (
-        <div className="py-8 lg:py-12 px-4 lg:px-32 flex flex-col gap-y-4 lg:gap-y-12">
+        <div className="py-8 lg:py-12 px-4 lg:px-40 flex flex-col gap-y-6 lg:gap-y-14">
             <div className="w-full flex flex-col items-center  gap-y-3 lg:flex-row lg:justify-between">
                 <h1 className='text-3xl lg:text-6xl font-bold text-navyBlue'>Blogs</h1>
-                <nav className=" flex flex-wrap items-center justify-center space-x-6 space-y-2 lg:space-y-0">
+                <nav className=" flex flex-wrap items-center py-2 justify-center space-x-2 space-y-1 lg:space-y-0">
                     {navItems.map((item, index) => (
                         <NavItem
                             key={index}
@@ -35,7 +35,7 @@ const Blogs: React.FC = () => {
 
             <div className="">
                 <BlogCard
-                    img={laptopImg}
+                    block={<SocialBlock />}
                     author='William George'
                     date='23 - 05 -2023'
                     readTime='15 Min Read'
@@ -45,5 +45,7 @@ const Blogs: React.FC = () => {
         </div>
     );
 };
+
+
 
 export default Blogs;
