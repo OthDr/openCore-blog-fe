@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         darkBlue: '#344054',
         lightBlue: '#EDF2F5',
+        lightGray: '#F8F8F8',
         mediumBlue1: '#2F5478',
         mediumBlue2: '#22405C',
       },

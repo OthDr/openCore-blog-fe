@@ -1,9 +1,11 @@
+import Navbar from "./components/inc/Navbar";
+import Header from "./components/sections/Header/Header";
+
 const App = () => {
   return (
     <div className="App">
-      <h1 className="text-5xl text-lime-600 font-bold underline">
-        Hello world!
-      </h1>
+      <Navbar />
+      <Header />
     </div>
   );
 }

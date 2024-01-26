@@ -1,7 +1,11 @@
+import FloatButton from "./FloatButton";
+import gridBg from "../../assets/img/gridBg.svg";
+
 const Navbar = () => {
     return (
-        <header className="px-4 lg:px-12 flex flex-col items-center justify-center py-4 lg:py-8">
-
+        <header className="relative flex flex-col items-center justify-center ">
+            <img className="w-full h-full bg-cover" src={gridBg} alt="grid bg" />
+            <FloatButton />
         </header>
     );
 }
