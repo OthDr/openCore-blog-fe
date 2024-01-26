@@ -2,8 +2,8 @@ import gridBg from "../../../assets/img/gridBg.svg";
 
 const BottomHero: React.FC = () => {
     return (
-        <div className="px-4 lg:px-48 overflow-hidden">
-            <div className="flex flex-col items-center justify-center bg-gradient-to-b from-mediumBlue1 to-mediumBlue2 rounded-xl overflow-hidden">
+        <div className="px-4 lg:px-48 overflow-hidden animate-slideright cursor-pointer">
+            <div className="flex flex-col items-center justify-center hover:brightness-110 duration-200 bg-gradient-to-b from-mediumBlue1 to-mediumBlue2 rounded-xl overflow-hidden">
                 <img loading="lazy" className="h-full lg:max-h-[400px] w-full bg-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none" src={gridBg} alt="grid bg" />
                 <div className="grid grid-cols-1 gap-6 place-items-center lg:grid-cols-2 py-4 lg:py-8">
                     <div className="flex flex-col gap-y-2 lg:gap-y-4">
