@@ -15,7 +15,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, author, date, readTime, img,
     return (
         <div className="animate-slideleft lg:animate-slideup bg-white p-2 lg:p-3 rounded-xl overflow-hidden shadow-lg">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 rounded-xl overflow-hidden bg-lightGray h-full"> {/* Ensure the parent container has a defined height */}
-                {block ? block : <img className="h-full lg:max-h-[400px] w-full bg-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none" src={img} alt="grid bg" />}
+                {block ? block : <img loading="lazy" className="h-full lg:max-h-[400px] w-full bg-cover rounded-t-xl lg:rounded-l-xl lg:rounded-r-none" src={img} alt="grid bg" />}
                 <div className="flex flex-col justify-center items-center lg:py-6">
                     <div className="lg:h-full flex flex-col items-center py-4 lg:py-0 lg:items-start justify-between gap-y-3 lg:gap-y-4">
                         <div className="flex flex-col gap-y-4 lg:gap-y-8">
@@ -35,7 +35,8 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, author, date, readTime, img,
                         </div>
                     </div>
 
-                    {block && <img className="lg:hidden bg-cover rotate-180" src={gridBg} alt="grid bg" />}
+                    {block && <img loading="lazy" className="lg:hidden bg-cover rotate-180" src={gridBg} alt="grid bg" />}
+
                 </div>
             </div>
 

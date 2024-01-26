@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavItem from '../../inc/NavbItem';
 import BlogCard from '../../inc/BlogCard';
 import SocialBlock from '../../inc/SocialBlock';
+import BlogsGrid from './BlogsGrid';
 
 const Blogs: React.FC = () => {
     const [selectedNav, setSelectedNav] = useState('All Blogs');
@@ -42,6 +43,9 @@ const Blogs: React.FC = () => {
                     title='07 Ways to get Consistent Clients from Social Media'
                 />
             </div>
+
+            <BlogsGrid />
+            
         </div>
     );
 };
